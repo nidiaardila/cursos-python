@@ -58,3 +58,39 @@ while i <= 5:
   i += 1
   if i == 3:
     break
+
+
+#Iterando sobre una lista
+print("...ITERANDO SOBRE UNA LISTA...")
+
+lenguajes = ['python', 'java', 'golang']
+print(lenguajes)
+print(lenguajes[1])
+
+#Iterando sobre una lista con for
+for index in range(len(lenguajes)):
+  print("indidce", index)
+  print("elemento", lenguajes[index])
+
+#iterando sobre una lista con while
+i = 0
+longitud = len(lenguajes)
+
+while i < longitud:
+  print(lenguajes[i])
+  i += 1
+
+#Iterando sobre un diccionario
+print("...ITERANDO SOBRE UN DICCIONARIO...")
+
+lenguajes ={
+   "nombre": "python",
+   "creador": "Guido van Rossum"
+}  
+
+for llave in lenguajes:
+  print("llave:", llave)
+  print("valor:", lenguajes[llave])
+
+for elemento in lenguajes.items():
+  print(elemento)
